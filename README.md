@@ -1,4 +1,4 @@
-"# auto-memory-retrieval" 
+# auto-memory-retrieval
 #Auto Memory Retrieval
 Idea:
 Scrapes all images off specified subreddits (up to a certain date, between 2 dates.. etc)
