@@ -1,1 +1,3 @@
 praw
+pytesseract
+python-dotenv
