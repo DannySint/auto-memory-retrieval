@@ -1,7 +1,6 @@
 import retriever
 import transcriber
 
-
 #return true if search terms are found in image
 #
 
@@ -12,5 +11,6 @@ def search(input, subreddit):
         if (input in transcription):
             print(submission.title, submission.url)
 
+#return most upvoted first
 
 search('Plankton', 'memes')
