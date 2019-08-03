@@ -1,4 +1,6 @@
 import os
+import io
+import requests
 from dotenv import load_dotenv
 
 try:
@@ -12,4 +14,11 @@ TESSERACT = os.getenv("TESSERACT")
 
 pytesseract.pytesseract.tesseract_cmd = TESSERACT
 
-print(pytesseract.image_to_string(Image.open('data/cucumber.png')))
+def transcribe_image_from_path(image_path):
+    image = Image.open(image_path)
+    return pytesseract.image_to_string(image)
+    
+def transcribe_image_from_url(image_url):
+    response = requests.get(image_url)
+    image = Image.open(io.BytesIO(response.content))
+    return pytesseract.image_to_string(image)
