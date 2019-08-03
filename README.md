@@ -6,3 +6,6 @@
 - Image transcribing bot (transcribes all text from the image)
 - MySQL Stores the link to image, stores text from image, stores title (checks for any correspondance in the comments to the transcription and if they match, if not then do something to auto-correct) If really not sure
 - Searchable interface that brings up any relevant info with scoring
+
+**Setup**
+```pip install -r requirements.txt```
