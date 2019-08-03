@@ -1,7 +1,7 @@
 import retriever
 import transcriber
 
-images = retriever.get_image_submissions('memes', 3)
+images = retriever.get_image_submissions('memes', 5)
 
 for image in images:
     print(image.title, image.url)
