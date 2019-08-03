@@ -13,5 +13,5 @@ def get_image_submissions(subreddit, amount):
     for submission in submissions:
         if(str.endswith(submission.url, 'jpg')):
             images.append(submission)
-            
+
     return images
