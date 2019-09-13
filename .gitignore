@@ -2,3 +2,4 @@ praw.ini
 __pycache__/
 .env
 db/
+data/
