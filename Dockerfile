@@ -6,11 +6,10 @@
 # RUN pip install -r requirements.txt
 # COPY . /code/
 
-FROM node:10
-WORKDIR /app
-COPY web/package.json package.json
-RUN npm install
-COPY . .
+FROM node:latest
+
+COPY web/package.json .
+RUN npm install --quiet
+
+COPY ./web .
 EXPOSE 3000
-RUN npm install -g nodemon
-CMD [ "nodemon", "index.js" ]
