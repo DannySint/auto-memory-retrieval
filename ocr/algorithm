@@ -1,0 +1,13 @@
+data: {reddit link, image link, title, image transcription}
+
+function scan a subreddit:
+get link
+  check if link is in database
+transcribe image
+store image data in db
+test: output image data from db 
+
+function search:
+get all image data
+check if string matches transcription
+return the image data of the matching ones
